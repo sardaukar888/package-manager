@@ -5,9 +5,11 @@ Peeyem is a simple package manager for Microsoft Flight Simulator. It allows you
 
 It works by creating soft links or junctions to the enabled packages. No directories or files are moved when enabling or disabling packages.
 
+## Requirements
+
 .NET Core 3.1 is required to run the application. You can download it [here](https://dotnet.microsoft.com/download/dotnet-core/current/runtime).
 
-**Changelog**
+## Changelog
 
 *v0.2.0, "Trying to think like an end user"*, 2020-10-04
 
