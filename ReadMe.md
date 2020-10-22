@@ -1,7 +1,7 @@
 
 # Peeyem
 
-Peeyem is a simple package manager for Microsoft Flight Simulator. It allows you to view all the official and community packages available on your system. Community packages can be enabled or disabled between game sessions to minimize the game's memory foot print.
+Peeyem is a simple to use package manager for Microsoft Flight Simulator. It allows you to view all the official and community packages available on your system. Community packages can be enabled or disabled between game sessions to minimize the game's memory foot print.
 
 It works by creating soft links or junctions to the enabled packages. No directories or files are moved when enabling or disabling packages.
 
@@ -10,6 +10,18 @@ It works by creating soft links or junctions to the enabled packages. No directo
 .NET Core 3.1 is required to run the application. You can download it [here](https://dotnet.microsoft.com/download/dotnet-core/current/runtime).
 
 ## Change Log
+
+v0.4.1, *"Software testers succeed where others fail."*, 2020-10-22
+
+* Added: "Select All from " sub menu to package context menu to select all packages in the same location or higher as the current selected package. It's more difficult to explain than to use.
+* Improved: Various performance optimizations.
+  * The thumbnail will no longer be read if you set the thumbnail scale factor to 0.
+  * Package analysis has been optimized.
+* Improved: Various little user interface tweaks.
+  * The package details panel displays the number of airports in a scenery package. The airport list is ordered by ICAO code.
+  * You can install package archives in directories by dropping the directory on the package list or the installer dialog.
+* Bug Fix: Failed to detect all airports in packages. "Official/fs-base" contains more than 10,000 airports.
+* Bug Fix: Packages without a layout.json file caused a crash to desktop.
 
 v0.4.0, *"The design is perfect, the only flaw is that we have to rely on you to fly it."*, 2020-10-19
 
@@ -20,7 +32,7 @@ v0.4.0, *"The design is perfect, the only flaw is that we have to rely on you to
 * Added: A scenery package shows the airports it contains in the details panel.
 * Added: Menu item in the package context menu to copy the airports of a scenery package to the clipboard.
 * Added: Peeyem can check if a new version has been released at startup or on demand. The default behavior can be changed in the Options dialog.
-* Changed: Folded "Enable / Selected" and "Enable / All" into 1 "Enable" menu item.
+* Changed: Folded "Enable / Selected" and "Enable / All" into one "Enable" menu item.
 * Changed: Folded "Disable / Selected" and "Disable / All" into one "Disable" menu item.
 * Improved: Various little user interface tweaks.
 * Bug Fix: The path of the Official Packages directory was not always saved to the settings if it was different from the detected path.
