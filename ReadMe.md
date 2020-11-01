@@ -11,9 +11,22 @@ It works by creating soft links or junctions to the enabled packages. No directo
 
 ## Change Log
 
+v0.5.0, *"I feel the need... the need for speed."*, 2020-11-02
+
+* Added: The package detail panel has been moved to the right side of the window to be able to show more information about a package.
+  * The airports of a scenery package are shown on a map.
+  * The scenery objects of a scenery package are shown on a map.
+  * The aircraft configurations are shown with more detail.
+  * The package detail panel can be enabled or disabled in the View / Details menu.
+* Added: An option to delete the content cache file when you enable or disable a package. You can enable the option in the Environment category of the Options dialog.
+* Improved: Various little performance improvements to better cope with large package libraries.
+    * Improved: Reading aircraft configurations.
+    * Improved: The airports and SimObjects of a scenery package are read on demand and in the background. This should reduce the performance hit when working with large package collections.
+* Bug Fix: Changed the value used to show the name of the liveries.
+
 v0.4.1, *"Software testers succeed where others fail."*, 2020-10-22
 
-* Added: "Select All from " sub menu to package context menu to select all packages in the same location or higher as the current selected package. It's more difficult to explain than to use.
+* Added: "Select All from" sub menu to package context menu to select all packages in the same location or higher as the current selected package. It's more difficult to explain than to use.
 * Improved: Various performance optimizations.
   * The thumbnail will no longer be read if you set the thumbnail scale factor to 0.
   * Package analysis has been optimized.
@@ -21,7 +34,7 @@ v0.4.1, *"Software testers succeed where others fail."*, 2020-10-22
   * The package details panel displays the number of airports in a scenery package. The airport list is ordered by ICAO code.
   * You can install package archives in directories by dropping the directory on the package list or the installer dialog.
 * Bug Fix: Failed to detect all airports in packages. "Official/fs-base" contains more than 10,000 airports.
-* Bug Fix: Packages without a layout.json file caused a crash to desktop.
+* Bug Fix: Packages without a layout.json file caused a crash to desktop.`
 
 v0.4.0, *"The design is perfect, the only flaw is that we have to rely on you to fly it."*, 2020-10-19
 
@@ -79,4 +92,5 @@ v0.1.0, *"Scratchin' the itch"*, 2020-10-01
 ## Acknowledgements / Credits
 
 * Various icons from [Online Web Fonts](https://www.onlinewebfonts.com/).
-* 7-Zip, Copyright (C) 1999-2020 Igor Pavlov.
+* Pin icon from Vista Map Markers demo icons [Icons Land]( http://www.icons-land.com/).
+* [7-Zip](https://www.7-zip.org/), Copyright (C) 1999-2020 Igor Pavlov.
