@@ -11,7 +11,7 @@ It works by creating soft links or junctions to the enabled packages. No directo
 
 ## Change Log
 
-v0.6.0, *"Flying a plane is no different than riding a bicycle, just a lot harder to put baseball cards in the spokes."*, 2020-11-xx
+v0.6.0, *"Flying a plane is no different than riding a bicycle, just a lot harder to put baseball cards in the spokes."*, 2020-12-06
 
 * Added: "Enable Selected" and "Disable Selected" menu items to the package context menu.
 * Added: The set of enabled packages can be saved to and loaded from a file.
