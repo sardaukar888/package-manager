@@ -11,6 +11,18 @@ It works by creating soft links or junctions to the enabled packages. No directo
 
 ## Change Log
 
+v0.6.0, *"Flying a plane is no different than riding a bicycle, just a lot harder to put baseball cards in the spokes."*, 2020-11-xx
+
+* Added: "Enable Selected" and "Disable Selected" menu items to the package context menu.
+* Added: The set of enabled packages can be saved to and loaded from a file.
+* Added: The waypoints of the flight plan of a mission package are displayed on a map.
+* Improved: Points of Interests are displayed in the Objects list of the package details panel.
+* Improved: Peeyem tries extra hard to determine the real package type of packages of types Core and Unknown.
+* Improved: Installing packages with the option "Required files only" takes into account packages with an invalid layout.json file.
+* Bug Fix: Failed to correctly read a small category of directory names containing non-ANSI characters.
+* Bug Fix: The "Select All from" context menu item did not allow you to select all packages in Official, Community or Warehouse package directory.
+* Known Problem: On one configuration Peeyem is be unable to recognize the junctions it creates resulting in an inconsistent view of the Community directory. Thanks to [fredm@FlightSim.to](https://flightsim.to/profile/fredm) for helping me to find the cause of this issue but so far no success.
+
 v0.5.0, *"I feel the need... the need for speed."*, 2020-11-02
 
 * Added: The package detail panel has been moved to the right side of the window to be able to show more information about a package.
@@ -75,7 +87,6 @@ v0.3.0, *"I don't know, I'm making this up as I go."*, 2020-10-10
   * Made reading Community packages more robust. Some packages contain errors in the data or the structure.
   * The logging and error checking has been expanded (but it will never be enough...)
 * Fixed: Crash when an enabled warehouse package was renamed outside the application. (Reported by [influous@FlightSim.to](https://flightsim.to/profile/influous))
-
 
 v0.2.0, *"Trying to think like an end user"*, 2020-10-04
 
